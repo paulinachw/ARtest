@@ -8,12 +8,12 @@
     <a-scene embedded arjs='sourceType: webcam; trackingMethod: best; debugUIEnabled: false; detectionMode: mono_and_matrix; matrixCodeType: 3x3;'
 	shadow=autoUpdate:true; type:pcf;">
       <a-assets>
-		<a-asset-item id="projekt1-obj" src="./obj/3d-projekt1.obj"></a-asset-item>
+		<a-asset-item id="model-obj" src="./obj/3d-model.obj"></a-asset-item>
 	 </a-assets>
 	<a-marker type="barcode" value="5">
 			<a-entity light="type:ambient; color: #BBB; intensity: 0.5"></a-entity>
 
-		<a-entity id= "sunroot">
+	<a-entity id= "sunroot">
 		<a-entity id="sunlight" sunlight light="type: directional;
 		shadowCameraLeft: -15;
 		shadowCameraRight: 15;
@@ -26,7 +26,7 @@
 		</a-entity>
 	</a-entity>
 
-		<a-obj-projekt1 src="#projekt1-obj" scale="0.03 0.03 0.03" shadow="recieive: true"><a-obj-projekt1>
+	<a-obj-model src="#model-obj" scale="0.03 0.03 0.03" shadow="recieive: true"><a-obj-model>
       </a-marker>
       <a-entity camera></a-entity>
     </a-scene>
