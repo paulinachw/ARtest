@@ -5,12 +5,12 @@
 <script src="./js/sun-light.js"<>/script>
 <link rel="slylesheet" type="text/css" href="./css/style.css" />
   <body style='margin : 0px; overflow: hidden;'>
-    <a-scene embedded arjs='sourceType: webcam; trackingMethod:best; debugUIEnabled: false; detectionMode: mono_and_matrix; matrixCodeType: 3x3;'
+    <a-scene embedded arjs='sourceType: webcam; trackingMethod: best; debugUIEnabled: false; detectionMode: mono_and_matrix; matrixCodeType: 3x3;'
 	shadow=autoUpdate:true; type:pcf;">
       <a-assets>
 		<a-asset-item id="projekt1-obj" src="./obj/3d-projekt1.obj"></a-asset-item>
 	 </a-assets>
-	<a-marker type="barcode" value="0">
+	<a-marker type="barcode" value="5">
 			<a-entity light="type:ambient; color: #BBB; intensity: 0.5"></a-entity>
 
 		<a-entity id= "sunroot">
